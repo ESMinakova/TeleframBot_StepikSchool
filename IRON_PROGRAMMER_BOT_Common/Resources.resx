@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bot_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bot 3.jpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CommonCoursesPageText" xml:space="preserve">
+    <value>В нашей школе ты найдешь курсы для &lt;u&gt;любого&lt;/u&gt; уровня подготвки. 
+Как для школьников и студентов, так и для тех, кто думает о смене професии, и для тех, кто уже уверненно идет по этому пути</value>
+  </data>
+  <data name="CSharpCoursesPageText" xml:space="preserve">
+    <value>Вот курсы по C#</value>
+  </data>
+  <data name="MozgokachalkaPageText" xml:space="preserve">
+    <value>&lt;b&gt;МОЗГОКАЧАЛКА&lt;/b&gt;
+Мозгокачалка это мощный проект для наших учеников, для мотивации к новым достижениям! 
+Занимайся каждый день, участвуй в мозгокачалке и не только стань самым умным, но и получай крутые призы!</value>
+  </data>
+  <data name="MozgokachalkaRulesPageText" xml:space="preserve">
+    <value>Для того, чтобы принять участие в мозгокачалке необходимо каждый день в течние календарного месяца решать миниму одну задачу на Степике. 
+На каких именно курсах - &lt;b&gt;на твоё усмотрение&lt;/b&gt;. Каждый месяц среди прошедших этот челлендж разыгрывается крутой мерч. 
+&lt;u&gt;Учатсие в мозгокачалке бесплатное.&lt;/u&gt;"</value>
+  </data>
+  <data name="OgeAndEgePageText" xml:space="preserve">
+    <value>Курсы для тех, кто хочет попробовать свои силы в программировании и размышляет над будущей профессие разработчика. Начни с:
+            * &lt;a href="https://stepik.org/course/50659/promo?auth=login"&gt;Подготовка к ОГЭ по информатике &lt;/a&gt;           
+            * &lt;a href="https://stepik.org/course/49808/promo?auth=login"&gt;Тренировочные варианты ЕГЭ по информатике &lt;/a&gt;           
+            * &lt;a href="https://stepik.org/course/30058/promo?auth=login"&gt;ЕГЭ по информатике: B часть (1 - 23 задания)&lt;/a&gt;
+            * &lt;a href="https://stepik.org/course/59702/promo?auth=login"&gt;ЕГЭ по информатике. C часть (24 - 27 задания)&lt;/a&gt;
+            * &lt;a href="https://stepik.org/course/118045/promo?auth=login"&gt;Соточка по информатике. Компьютерный формат ЕГЭ&lt;/a&gt;
+            Полный список курсов по подготовке к ЕГЭ и ОГЭ ты можешь увидеть на сайте &lt;a href="https://stepik.org/catalog"&gt;Stepik.org&lt;/a&gt;.</value>
+  </data>
+  <data name="RegistrationPageIncorrectStepikIDText" xml:space="preserve">
+    <value>Неверное значение Stepik ID. Пожалуйста, введите ID в цифровом значении</value>
+  </data>
+  <data name="RegistrationPageText" xml:space="preserve">
+    <value>Для регистрации отправьте свой &lt;b&gt;Stepik ID&lt;/b&gt;. Его можно найти в своём профиле на сайте &lt;a href="https://stepik.org/catalog"&gt;Stepik&lt;/a&gt;</value>
+  </data>
+  <data name="StartPageText" xml:space="preserve">
+    <value>&lt;b&gt;Привет!&lt;/b&gt;
+Рад видеть тебя😊
+
+Задай свой вопрос и я тебе обязательно отвечу!
+
+Хочешь записаться на курс или получить информацию?
+Нажми одну из кнопок ниже, выбирай направление - я отвечу и помогу тебе😉</value>
+  </data>
+  <data name="SuccessfulRegistrationPageText" xml:space="preserve">
+    <value>Пользователь зарегистрирован, добро пожаловать в группу: 
+
+https://t.me/+WMb4-xV3n3QyMWIy</value>
+  </data>
+</root>
