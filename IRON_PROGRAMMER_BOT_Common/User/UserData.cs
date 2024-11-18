@@ -6,7 +6,7 @@
 
         public MessageData? LastMessage { get; set; }
 
-
+        public string? SelectedCourseId { get; set; }
         public override string ToString()
         {
             return $"{StepikId} = stepikId";

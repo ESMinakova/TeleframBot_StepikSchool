@@ -90,6 +90,15 @@ namespace IRON_PROGRAMMER_BOT_Common {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Вот все промокоды.
+        /// </summary>
+        public static string CSharpPromocodePageText {
+            get {
+                return ResourceManager.GetString("CSharpPromocodePageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;b&gt;МОЗГОКАЧАЛКА&lt;/b&gt;
         ///Мозгокачалка это мощный проект для наших учеников, для мотивации к новым достижениям! 
         ///Занимайся каждый день, участвуй в мозгокачалке и не только стань самым умным, но и получай крутые призы!.

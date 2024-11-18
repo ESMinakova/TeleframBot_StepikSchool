@@ -21,7 +21,7 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.CoursesBranch
             return this;
         }
 
-        public override string GetText()
+        public override string GetText(UserState userState)
         {
             return Resources.CommonCoursesPageText;
         }
