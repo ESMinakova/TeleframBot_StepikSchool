@@ -75,9 +75,13 @@ namespace IRON_PROGRAMMER_BOT_Common
             }
             if (result.UpdatedUserState.UserData.LastMessage != null)
             {
-                await client.DeleteMessageAsync(
-                    chatId: telegramUserID,
-                    messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+                try
+                {
+                    await client.DeleteMessageAsync(
+                        chatId: telegramUserID,
+                        messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+                }
+                catch { Console.WriteLine("Опять не можем удалить сообщение"); }
             }
 
             return await client.SendTextMessageAsync(
@@ -104,9 +108,16 @@ namespace IRON_PROGRAMMER_BOT_Common
             }
             if (result.UpdatedUserState.UserData.LastMessage != null)
             {
-                await client.DeleteMessageAsync(
+               try
+                {
+                    await client.DeleteMessageAsync(
                     chatId: telegramUserID,
                     messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+                }
+                catch {
+                    Console.WriteLine("Опять не можем удалить сообщение");
+                }
+;
             }
             return await client.SendPhotoAsync(
                     chatId: telegramUserID,
@@ -130,11 +141,15 @@ namespace IRON_PROGRAMMER_BOT_Common
                     },
                     replyMarkup: (InlineKeyboardMarkup)result.ReplyMarkup!);
             }
-            if (result.UpdatedUserState.UserData.LastMessage != null)
-            {
-                await client.DeleteMessageAsync(
-                    chatId: telegramUserID,
-                    messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+           if (result.UpdatedUserState.UserData.LastMessage != null)
+           {
+                try
+                {
+                    await client.DeleteMessageAsync(
+                        chatId: telegramUserID,
+                        messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+                }
+                catch { Console.WriteLine("Опять не можем удалить сообщение"); }
             }
             return await client.SendAudioAsync(
                 chatId: telegramUserID,
@@ -160,9 +175,13 @@ namespace IRON_PROGRAMMER_BOT_Common
             }
             if (result.UpdatedUserState.UserData.LastMessage != null)
             {
-                await client.DeleteMessageAsync(
-                    chatId: telegramUserID,
-                    messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+                try
+                {
+                    await client.DeleteMessageAsync(
+                        chatId: telegramUserID,
+                        messageId: result.UpdatedUserState.UserData.LastMessage.Id);
+                }
+                catch { Console.WriteLine("Опять не можем удалить сообщение"); }
             }
             return await client.SendDocumentAsync(
                 chatId: telegramUserID,
