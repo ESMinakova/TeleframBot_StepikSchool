@@ -11,7 +11,7 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.Base
 
         public async override Task<PageResultBase> ViewAsync(Update update, UserState userState)
         {
-            var text = GetText();
+            var text = GetText(userState);
             var keyboard = GetInlineKeybpardMarkup();
             var photo = resoursesHelper.GetResourse(GetPhoto());
 

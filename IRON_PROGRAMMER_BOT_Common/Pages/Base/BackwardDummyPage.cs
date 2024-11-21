@@ -16,7 +16,7 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.Base
             throw new NotImplementedException();
         }
 
-        public override string GetText()
+        public override string GetText(UserState userState)
         {
             throw new NotImplementedException();
         }

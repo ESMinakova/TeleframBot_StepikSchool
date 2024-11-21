@@ -1,4 +1,5 @@
 ﻿using IRON_PROGRAMMER_BOT_Common.Pages.Base;
+using IRON_PROGRAMMER_BOT_Common.Pages.PageResults;
 using IRON_PROGRAMMER_BOT_Common.StepikApi;
 using IRON_PROGRAMMER_BOT_Common.User;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,7 +24,7 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.CoursesBranch
             return this;
         }
 
-        public override string GetText()
+        public override string GetText(UserState userState)
         {
             return Resources.CSharpCoursesPageText;
         }
@@ -35,10 +36,21 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.CoursesBranch
 
             return courses.Select<Course, ButtonLinkPage[]>(x =>
             [
-                new ButtonLinkPage(InlineKeyboardButton.WithCallbackData(x.Title, x.Id.ToString()), services.GetRequiredService<StartPage>())
+                new ButtonLinkPage(InlineKeyboardButton.WithCallbackData(x.Title, x.Id.ToString()), services.GetRequiredService<CSharpPromocodePage>())
             ])
             .Concat([[new ButtonLinkPage(InlineKeyboardButton.WithCallbackData("Назад"), services.GetRequiredService<BackwardDummyPage>())]])
             .ToArray();
+        }
+
+        public async override Task<PageResultBase> HandleAsync(Update update, UserState userState)
+        {
+            if (update.CallbackQuery == null)
+            {
+                return await ViewAsync(update, userState);
+            }
+
+            userState.UserData.SelectedCourseId = update.CallbackQuery?.Data;   
+            return await base.HandleAsync(update, userState);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.MozgokachalkaBranch
             return this;
         }
 
-        public override string GetText()
+        public override string GetText(UserState userState)
         {
             return Resources.SuccessfulRegistrationPageText;
         }

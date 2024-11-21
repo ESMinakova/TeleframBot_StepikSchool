@@ -128,6 +128,9 @@
   <data name="CSharpCoursesPageText" xml:space="preserve">
     <value>Вот курсы по C#</value>
   </data>
+  <data name="CSharpPromocodePageText" xml:space="preserve">
+    <value>Вот все промокоды</value>
+  </data>
   <data name="MozgokachalkaPageText" xml:space="preserve">
     <value>&lt;b&gt;МОЗГОКАЧАЛКА&lt;/b&gt;
 Мозгокачалка это мощный проект для наших учеников, для мотивации к новым достижениям! 

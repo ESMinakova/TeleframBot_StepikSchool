@@ -18,7 +18,7 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages
             return Resources.bot_3;
         }
 
-        public override string GetText()
+        public override string GetText(UserState userState)
         {
             return Resources.StartPageText;
         }

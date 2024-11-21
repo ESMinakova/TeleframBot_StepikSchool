@@ -7,14 +7,14 @@ namespace IRON_PROGRAMMER_BOT_Common.Pages.Base
 {
     public abstract class CallbackQueryPageBase: IPage
     {
-        public abstract string GetText();
+        public abstract string GetText(UserState userState);
 
         public abstract ButtonLinkPage[][] GetKeyboard();
 
 
         public async virtual Task<PageResultBase> ViewAsync(Update update, UserState userState)
         {
-            var text = GetText();
+            var text = GetText(userState);
 
 
             var replyMarkup = GetInlineKeybpardMarkup();

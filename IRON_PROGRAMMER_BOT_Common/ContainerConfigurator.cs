@@ -24,6 +24,9 @@ namespace IRON_PROGRAMMER_BOT_Common
             var botConfigurationSection = configuration.GetSection(BotConfiguration.SectionName);
             services.Configure<BotConfiguration>(botConfigurationSection);
 
+            var stepikAPIConfigurationSection = configuration.GetSection(StepikAPIConfiguration.SectionName);
+            services.Configure<BotConfiguration>(stepikAPIConfigurationSection);
+
             services.AddSingleton<UserStateStorage>();
             services.AddSingleton<FirebaseProvider>();
             services.AddSingleton(services =>
